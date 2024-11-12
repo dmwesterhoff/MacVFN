@@ -23,7 +23,7 @@ These are the basic steps to build and install the driver:
 2. Identify the newest or matching tagged xNVMe version of MacVFN (or go with `master`)
 3. Git clone this repo with submodules: `git clone --recurse-submodules --branch xnvme_vX.Y.Z https://github.com/SamsungDS/MacVFN.git`
 4. Run `make build install kill log`, approve system extension and type sudo-password as needed
-5. Clone xNVMe with the `driverkit` branch: `git clone -b driverkit https://github.com/baekalfen/xnvme`
+5. Clone xNVMe with the `next` branch: `git clone -b next https://github.com/xnvme/xnvme`
 6. Run `make config build install`
 7. Check your NVMe device enumerates `xnvme enum`
 8. Then take the 'uri' and run a command: `xnvme idfy MacVFN-1234ABCD --cns 0 --be=driverkit`
